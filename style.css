@@ -228,8 +228,8 @@ header .author img{
         url(images/DSC00830.JPG) 0 0;
     background-size: auto 100%;
     background-repeat: no-repeat;
-    width: 400px;
-    height: 500px;
+    width: 380px;
+    height: 450px;
     
     aspect-ratio: 2 / 4;
     background-blend-mode: multiply;
@@ -255,8 +255,9 @@ header .author img{
         url(images/rafi.jpg) 0 0;
     background-size: auto 100%;
     background-repeat: no-repeat;
-    width: 380px;
-    height: 500px;
+    width: 340px;
+    height: 450px;
+ 
     
     aspect-ratio: 2 / 4;
     background-blend-mode: multiply;
@@ -265,6 +266,89 @@ header .author img{
     mask-size: auto 100%;
 }
 .soda2:nth-child(2){
+    opacity: 0;
+}
+
+
+.product .soda3{
+    position: absolute;
+    bottom: 0;
+    left: calc(50%);
+    transform: translateX(-50%);
+}
+.soda3{
+    --left: 0px;
+    background: 
+        var(--url) var(--left),
+        url(images/himel.jpg) 0 0;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 430px;
+    
+    aspect-ratio: 2 / 4;
+    background-blend-mode: multiply;
+    transition: 0.8s;
+    mask-image: url(images/himel.jpg);
+    mask-size: auto 100%;
+}
+.soda3:nth-child(2){
+    opacity: 0;
+}
+
+
+
+.product .soda4{
+    position: absolute;
+    bottom: 0;
+    left: calc(50%);
+    transform: translateX(-50%);
+}
+.soda4{
+    --left: 0px;
+    background: 
+        var(--url) var(--left),
+        url(images/saitz.jpg) 0 0;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    width: 330px;
+    height: 450px;
+    
+    aspect-ratio: 2 / 4;
+    background-blend-mode: multiply;
+    transition: 0.8s;
+    mask-image: url(images/saitz.jpg);
+    mask-size: auto 100%;
+}
+.soda4:nth-child(2){
+    opacity: 0;
+}
+
+
+
+.product .soda5{
+    position: absolute;
+    bottom: 0;
+    left: calc(50%);
+    transform: translateX(-50%);
+}
+.soda5{
+    --left: 0px;
+    background: 
+        var(--url) var(--left),
+        url(images/jahid2.jpg) 0 0;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 450px;
+    
+    aspect-ratio: 2 / 4;
+    background-blend-mode: multiply;
+    transition: 0.8s;
+    mask-image: url(images/jahid2.jpg);
+    mask-size: auto 100%;
+}
+.soda5:nth-child(2){
     opacity: 0;
 }
 
@@ -289,18 +373,8 @@ header .author img{
 
 
 
-
-
-
-
-
-
-
-
-
-
 .product:hover{
-    bottom: 300px;
+    bottom: 180px;
 }
 .product:hover .soda:nth-child(2){
     opacity: 1;
@@ -376,4 +450,8 @@ header .author img{
     width: 100px;
     height: 100px;
      
+}
+span
+{
+visibility: hidden;
 }
