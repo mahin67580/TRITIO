@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
     <title>Tritio</title>
     <style>
         
@@ -40,15 +41,54 @@
         }
     </style>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
 
 
 <div class="nav">
-
-
+    <div class="navimg">
+           <img src="images/navlogo.png" alt=""> 
+    </div>
 
 </div>
+
+<div class="container">
+    <!-- Trigger Image -->
+    <img src="images/navlogo.png" alt="Menu Icon" class="menu-trigger" id="menuTrigger" />
+
+    <!-- Side Navbar -->
+    <div class="side-navbar" id="sideNavbar">
+      <button class="close-btn" id="closeBtn">&times;</button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#songs">Songs</a></li>
+        <li><a href="#photos">Photos</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#socials">Socials</a></li>
+        <li><a href="#book">Book Us</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    const menuTrigger = document.getElementById('menuTrigger');
+    const sideNavbar = document.getElementById('sideNavbar');
+    const closeBtn = document.getElementById('closeBtn');
+
+    // Open the navbar when the image is clicked
+    menuTrigger.addEventListener('click', () => {
+      sideNavbar.style.left = '0';
+    });
+
+    // Close the navbar when the close button is clicked
+    closeBtn.addEventListener('click', () => {
+      sideNavbar.style.left = '-250px';
+    });
+  </script>
+
+
+
 
 
 
@@ -217,7 +257,7 @@
         <div class="product">
             <div class="soda5" style="--url: url(images/bg.png)">
             </div>
-            <div class="soda5" style="--url: url(images/ma)">
+            <div class="soda4" style="--url: url(images/ma)">
             </div>
         </div>
         <div class="rock">
